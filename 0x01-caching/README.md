@@ -1,6 +1,6 @@
-##0x01. Caching
+# 0x01. Caching
 
-##Learning Objectives
+# Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
 #General
@@ -12,7 +12,9 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 - What LFU means
 - What the purpose of a caching system
 - What limits a caching system have
-#Requirements
+- 
+# Requirements
+
 - Python Scripts
 - All your files will be interpreted/compiled on Ubuntu 18.04 LTS using python3 (version 3.7)
 - All your files should end with a new line
@@ -25,8 +27,9 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 - All your classes should have a documentation (python3 -c 'print(__import__("my_module").MyClass.__doc__)')
 - All your functions (inside and outside a class) should have a documentation (python3 -c 'print(__import__("my_module").my_function.__doc__)' and python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)')
 - A documentation is not a simple word, it’s a real sentence explaining what’s the purpose of the module, class or method (the length of it will be verified)
-#More Info
-#Parent class BaseCaching
+
+# More Info
+# Parent class BaseCaching
 -- All your classes must inherit from BaseCaching defined below:
 
 $ cat base_caching.py
@@ -63,9 +66,11 @@ class BaseCaching():
         """
         raise NotImplementedError("get must be implemented in your cache class")
 
-##Tasks
+
+# Tasks
+
 0. Basic dictionary
-mandatory
+   
 Create a class BasicCache that inherits from BaseCaching and is a caching system:
 
 You must use self.cache_data - dictionary from the parent class BaseCaching
@@ -127,7 +132,7 @@ Directory: 0x01-caching
 File: 0-basic_cache.py
   
 1. FIFO caching
-mandatory
+
 Create a class FIFOCache that inherits from BaseCaching and is a caching system:
 
 You must use self.cache_data - dictionary from the parent class BaseCaching
@@ -190,7 +195,7 @@ Directory: 0x01-caching
 File: 1-fifo_cache.py
   
 2. LIFO Caching
-mandatory
+   
 Create a class LIFOCache that inherits from BaseCaching and is a caching system:
 
 You must use self.cache_data - dictionary from the parent class BaseCaching
@@ -257,11 +262,13 @@ $
 Repo:
 
 GitHub repository: alx-backend
+
 Directory: 0x01-caching
+
 File: 2-lifo_cache.py
   
 3. LRU Caching
-mandatory
+
 Create a class LRUCache that inherits from BaseCaching and is a caching system:
 
 You must use self.cache_data - dictionary from the parent class BaseCaching
@@ -368,11 +375,13 @@ $
 Repo:
 
 GitHub repository: alx-backend
+
 Directory: 0x01-caching
+
 File: 3-lru_cache.py
   
 4. MRU Caching
-mandatory
+
 Create a class MRUCache that inherits from BaseCaching and is a caching system:
 
 You must use self.cache_data - dictionary from the parent class BaseCaching
@@ -479,5 +488,7 @@ $
 Repo:
 
 GitHub repository: alx-backend
+
 Directory: 0x01-caching
+
 File: 4-mru_cache.py
